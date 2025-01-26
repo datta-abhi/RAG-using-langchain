@@ -6,7 +6,7 @@ from langchain_chroma import Chroma
 from docs import chunks
 
 # initialise openai embeddings instance
-embeddings = OpenAIEmbeddings()
+embeddings = OpenAIEmbeddings(model = 'text-embedding-3-small')
 
 # create new Chroma datastore (if already exists then delete collection to start from scratch)
 DB_NAME = 'vector-db'
