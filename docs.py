@@ -23,7 +23,7 @@ for folder in folders:
         documents.append(doc)
 
 # splitting text into chunks
-text_splitter = CharacterTextSplitter(chunk_size = 800, chunk_overlap = 200)
+text_splitter = CharacterTextSplitter(chunk_size = 1000, chunk_overlap = 300)
 chunks = text_splitter.split_documents(documents)
 # print(len(chunks))
 # print(chunks[1])
